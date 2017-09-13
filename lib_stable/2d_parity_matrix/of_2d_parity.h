@@ -100,7 +100,9 @@ typedef struct of_2d_parity_cb
 	/** table containing the number of equations in which a repair symbol is included. */
 	OF_UINT16*		tab_nb_equ_for_repair;
 	
-		void** repair_symbols_values;
+	void** repair_symbols_values;
+	void		** tmp_tab_symbols;
+	OF_UINT16		nb_tmp_symbols;
 #endif /* } OF_USE_DECODER */
 
 	void 		**encoding_symbols_tab;
